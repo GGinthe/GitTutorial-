@@ -4,8 +4,8 @@
 using namespace System;
 
 bool Guess(int number) {
-	static int target = -1;
-	if (target == -1) {
+	static int target = 0;
+	if (!target) {
 		Random r;
 		target = r.Next() % 100 + 1;
 	}
