@@ -4,7 +4,13 @@
 using namespace System;
 
 bool Guess(int number) {
-	return 0;
+	static int target = -1;
+	if (target == -1) {
+		Random r;
+		target = r.Next() % 3 + 1;
+	}
+	if (number == target)return true;
+	return false;
 }
 int main(array<System::String ^> ^args)
 {
