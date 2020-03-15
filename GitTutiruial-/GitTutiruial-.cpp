@@ -5,6 +5,7 @@ using namespace System;
 
 bool Guess(int number) {
 	static int target = 0;
+	static int count = 0;
 	if (!target) {
 		Random r;
 		target = r.Next() % 100 + 1;
@@ -20,7 +21,7 @@ bool Guess(int number) {
 }
 int main(array<System::String ^> ^args)
 {
-		int guess;
+		int guess, test;
 		do {
 			std::cin >> guess;
 		} while (!Guess(guess));
