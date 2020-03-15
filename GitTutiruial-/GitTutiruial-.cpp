@@ -27,3 +27,4 @@ int main(array<System::String ^> ^args)
 		} while (!Guess(guess));
     return 0;
 }
+//push 7 fuck oop
